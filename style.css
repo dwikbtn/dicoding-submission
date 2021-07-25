@@ -51,3 +51,63 @@ ul a:hover{
     text-decoration: underline;
     text-decoration-color: #FFAA4C;
 }
+
+/* hero start here */
+.hero-slide {
+display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background-position: center center;
+  background-size: cover;
+  backface-visibility: hidden;
+  animation: slide 8s linear infinite;
+  animation-timing-function: ease-in-out;
+  background-image: url(src/images/bg/bg-1.jpg);
+}
+
+@keyframes slide {
+  0% {
+    background-image: url(src/images/bg/bg-1.jpg),
+      url(src/images/bg/bg-2.jpg);
+  }
+  50% {
+    background-image: url(src/images/bg-2.jpg),
+      url(src/images/bg/bg-3.jpg);
+  }
+  100% {
+    background-image: url(src/images/bg/bg-3.jpg),
+      url(src/images/bg/bg-1.jpg);
+  }
+}
+
+.hero-text h1{
+    color: #001E6C;
+    text-align: center;
+    font-size: 3.75rem;
+    font-weight:bolder;
+}
+
+.hero-text P{
+    color: #035397 }
+
+.cta {
+  margin-top: 20px;
+  border-radius: 35px;
+  text-align: center;
+  background-color: #FFAA4C;
+  padding: 16px 48px;
+}
+
+a.cta{
+    color: #035397;
+    list-style: none;
+    text-decoration: inherit;
+}
+
+a.cta:hover{
+    text-decoration: underline;
+    text-decoration-color: #001E6C;
+}
